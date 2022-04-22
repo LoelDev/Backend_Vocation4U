@@ -3,8 +3,8 @@ package com.technostart.vocation4u.models;
 import javax.persistence.*;
 
 @Entity
-@Table(name =  "students")
-public class Student {
+@Table(name = "specialists")
+public class Specialist {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,7 +15,7 @@ public class Student {
     private Long phone_number;
     private String email;
     private String password;
-
+    private Long regular_price;
 
     public void setName (String name){
         this.name = name;
@@ -63,5 +63,13 @@ public class Student {
 
     public Long getId() {
         return id;
+    }
+
+    public void setPrice (Long regular_price){
+        this.regular_price = regular_price;
+    }
+
+    public Long getPrice() {
+        return regular_price;
     }
 }
