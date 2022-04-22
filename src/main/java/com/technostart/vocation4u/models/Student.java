@@ -1,7 +1,14 @@
 package com.technostart.vocation4u.models;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name =  "students")
 public class Student {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(unique = true, nullable = false)
     private Long id;
     private String name;
     private String address;
@@ -9,13 +16,6 @@ public class Student {
     private String email;
     private String password;
 
-    public void setId (Long id){
-        this.id = id;
-    }
-
-    public Long getId(){
-        return id;
-    }
 
     public void setName (String name){
         this.name = name;
@@ -55,5 +55,13 @@ public class Student {
 
     public String getPassword(){
         return password;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
     }
 }
