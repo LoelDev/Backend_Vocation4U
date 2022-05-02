@@ -1,6 +1,5 @@
 package com.technostart.vocation4u.services;
 
-import com.technostart.vocation4u.models.Article;
 import com.technostart.vocation4u.models.Date;
 import com.technostart.vocation4u.repositories.DateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
