@@ -16,7 +16,6 @@ public class Student {
     private String email;
     private String password;
 
-
     public void setName (String name){
         this.name = name;
     }
