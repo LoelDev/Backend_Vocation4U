@@ -1,7 +1,6 @@
 package com.technostart.vocation4u.controllers;
 
 import com.technostart.vocation4u.models.Payment;
-import com.technostart.vocation4u.models.Student;
 import com.technostart.vocation4u.services.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
